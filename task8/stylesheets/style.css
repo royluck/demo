@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	margin:10px auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.box{
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.inner{
+	height: 50px;
+	background-color: #eee;
+	border: 1px solid #999;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.col-md-1{
+	width: 8.33333%;
+}
+.col-md-2{
+	width: 16.66667%;
+}
+.col-md-3{
+	width: 25%;
+}
+.col-md-4{
+
+	width: 33.33333%;
+}
+.col-md-6{
+
+	width: 50%;
+}
+
+/**当屏幕宽度小于等于768px**/
+@media only screen and (max-width: 768px){
+.col-sm-2{
+	width: 16.66667%;
+}
+.col-sm-3{
+	width: 25%;
+}
+.col-sm-6{
+	width: 50%;
+}
+.col-sm-8{
+	width: 66.66667%;
+}
+.col-sm-12{
+	width: 100%;
+}
+}

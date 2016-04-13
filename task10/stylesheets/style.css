@@ -1,0 +1,62 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+
+ }
+.wrapper{
+		/* margin: auto;通过margin进行子元素居中没反应，需在子元素内添加。但在子元素添加左右元素不能紧贴父元素边款，因为存在margin距离 */
+		background-color: green;
+		 display: -webkit-flex;
+		 display:  flex;
+		 flex-direction: row;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;/**/
+		align-items: center;
+}
+.box1{
+	margin: 20px 0px;
+	width: 150px;
+	height: 120px;
+	border: 1px solid red;
+	/* margin: 10px; *//*使用padding控制box之间的间隔，别用margin因为其会占用空间*/
+}
+.box2{
+	margin: 20px 0px;
+	width: 150px;
+	height: 100px;
+	border: 1px solid red;
+	/* margin: 10px; *//*使用padding控制box之间的间隔，别用margin因为其会占用空间*/
+}
+.box3{
+	margin: 20px 0px;
+	width: 150px;
+	height: 40px;
+	border: 1px solid red;
+	/* margin: 10px; *//*使用padding控制box之间的间隔，别用margin因为其会占用空间*/
+}
+.box4{
+	margin: 20px 0px;
+	width: 150px;
+	height: 200px;
+	border: 1px solid blue;
+	/* margin: 10px; *//*使用padding控制box之间的间隔，别用margin因为其会占用空间*/
+}
+
+	 @media only screen and (max-width:640px) {
+		.wrapper{
+				 display: -webkit-flex;
+				 display:  flex;
+				 flex-direction: row;
+				 flex-wrap: wrap;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				-webkit-align-items: flex-start;/**/
+				align-items: flex-start;
+		}
+		.box4{
+			order: -1;
+		}
+	}

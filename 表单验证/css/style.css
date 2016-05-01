@@ -1,0 +1,10 @@
+.msg {
+	display:none;
+}
+#count{
+	visibility: hidden;
+}
+.active{
+	background-color: blue;
+
+}

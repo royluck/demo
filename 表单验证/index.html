@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form method="www.mukewang.com">
+		<div style="background-color: red;">
+			<label>
+				<span>会员名：</span><input type="text" class="text"></input>
+			</label>
+			<p class="msg"></p>
+		</div>
+		<div style="background-color: red;">
+			<label>
+				<span></span><b id="count">０个字符</b>
+			</label>
+		</div>
+		<div style="background-color: blue;">
+			<label>
+				<span>登陆密码：</span><input type="text" class="text"></input>
+			</label>
+			<p class="msg"></p>
+		</div>
+		<div style="margin:3px 0 1px 0;">
+			<label>
+				<em class="active">弱</em><em>中</em><em>强</em>
+			</label>
+		</div>
+		<div style="margin-bottom: 20px;background-color: yellow;">
+			<label>
+				<span>确认密码：</span><input type="password" class="text" disabled="">
+			</label>
+			<p class="msg"><i class="ati"></i>请再输入一次</p>
+
+		</div>
+		<div>
+			<input class="submitBtn btn" type="submit" value="同意协议并注册"></input>
+		</div>
+	</form>
+</body>
+</html>

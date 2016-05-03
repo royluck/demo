@@ -1,0 +1,21 @@
+倒影（只支持chrome和safari,firefox存在兼容方法）
+-webkit-box-reflect:below 0px -webkit-gradient(
+linear,
+left top,
+left bottom,
+from(transparent),
+color-stop(50%,transparent),
+to(rgba(255,255,255,.3))
+)
+
+注: 
+below:倒影方向:底边
+偏移：０px
+-webkit-gradient:遮罩：渐变（
+	线性渐变：linear
+	起始位置:left top
+	结束位置:left bottom
+	开始颜色:from()
+	中间位置　过度点　颜色:color-stop(50%,transparent),
+	结束颜色
+）

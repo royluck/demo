@@ -92,6 +92,6 @@ window.onload = function (){
 	swichSlider(1);
 	setTimeout(function(){
 		movePicture();// 存在时间差，必须添加延时，因为照片是动态添加的
-	},600)
+	},1000)
 }
 //+=可以换成=吗？

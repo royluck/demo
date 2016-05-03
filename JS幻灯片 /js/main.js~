@@ -45,7 +45,7 @@ function addSlider(){
 	g('template_main').innerHTML=out_main.join('');
 	g('template_ctrl').innerHTML=out_ctrl.join('');
 	}
-
+	//7增加背景图片#background
 	g('template_main').innerHTML+=tpl_main
 			.replace(/{{index}}/g,'{{index}}')
 			.replace(/{{h2}}/g,data[i].h1)
@@ -70,6 +70,9 @@ var swichSlider=function(n){　
 //5.4为当前控制按钮和幻灯片附加样式
 	main.className += ' main-i_active';
 	ctrl.className += ' ctrl-i_active';
+	setTimeout(function(){
+		g('main_background').innerHTML=main.innerHTML;/*??*/
+	},1000);
 }
 
 //6.动态调整图片的margin-top以使其垂直居中
@@ -89,6 +92,6 @@ window.onload = function (){
 	swichSlider(1);
 	setTimeout(function(){
 		movePicture();// 存在时间差，必须添加延时，因为照片是动态添加的
-	},100)
+	},600)
 }
 //+=可以换成=吗？
